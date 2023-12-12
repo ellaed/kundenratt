@@ -1,1 +1,61 @@
-/* Denna fil skall innehålla din CSS kod */
+
+#wrapper {
+display: grid;
+background-color: rgb(199, 117, 49);
+grid-template-rows: 5fr 3fr 3fr;
+gap: 25px;
+grid-template-areas:
+'hd hd hd hd'
+'nv nv sc sc'
+'ai ai ft ft';
+min-height:95vh;
+
+}
+
+header {
+    background-color: white;
+   grid-area: hd; 
+   font-size: 40px;
+   display: flex;
+   justify-content: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   border: solid black 2px;
+}
+
+nav {
+    background-color: white;
+    grid-area: nv;
+    font-size: medium;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+section {
+    grid-area: sc;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+
+}
+
+aside {
+    grid-area: ai;
+    font-size: medium;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
+
+footer {
+    grid-area: ft;
+    font-size: medium;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+}
+
