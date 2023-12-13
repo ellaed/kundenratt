@@ -1,7 +1,7 @@
 
 #wrapper {
 display: grid;
-background-color: rgb(199, 117, 49);
+background-color: #935f32;
 grid-template-rows: 5fr 3fr 3fr;
 gap: 25px;
 grid-template-areas:
@@ -12,50 +12,110 @@ min-height:95vh;
 
 }
 
+#wrapper_index2 {
+display: grid;
+grid-template-rows: 5fr 3fr 3fr;
+grid-template-areas: 
+''
+'s s'
+;
+}
+
 header {
-    background-color: white;
+    background-image: url("../img/background_webb.jpg");
+    background-size: cover;
    grid-area: hd; 
    font-size: 40px;
+   color: rgb(255, 255, 255);
    display: flex;
    justify-content: center;
+   align-items: center;
    font-family:Georgia, 'Times New Roman', Times, serif;
    border: solid black 2px;
 }
 
+header img{
+    width: 80px;
+}
+
 nav {
-    background-color: white;
+    
     grid-area: nv;
+    margin-left: 20px;
     font-size: medium;
     font-family: monospace;
     display: flex;
     justify-content: space-around;
     border: solid black 2px;
+    border-radius: 20px;
+
 }
 
-section {
+#sec11 {
     grid-area: sc;
+    background-image: url("../img/bild1_webb.jpg");
+    background-size: cover;
+    margin-right: 20px;
     display: flex;
     justify-content: space-around;
     border: solid black 2px;
-
+    border-radius: 20px;
 }
 
 aside {
     grid-area: ai;
-    font-size: medium;
+    background-image: url("../img/bild2menu_webb.jpg");
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
     font-family: monospace;
-    display: flex;
+    color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
     justify-content: space-around;
     border: solid black 2px;
+    border-radius: 20px;
+    
 }
 
 
 footer {
     grid-area: ft;
+    margin-right: 20px;
+    margin-bottom: 15px;
     font-size: medium;
     font-family: monospace;
     display: flex;
     justify-content: space-around;
     border: solid black 2px;
+    border-radius: 20px;
+}
+
+
+#sectionmenu{
+    grid-area: s;
+}
+
+header2{
+    color: blue;
+}
+
+#sec21{
+color: blue;
+}
+
+#sec22{
+    color: blue;
+}
+
+#sec23{
+    color: blue;
+}
+
+#sec24{
+    color: blue;
 }
 
