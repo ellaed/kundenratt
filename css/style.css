@@ -1,8 +1,8 @@
 
-#wrapper {
+#wrapper{
 display: grid;
-background-color: #935f32;
-grid-template-rows: 5fr 3fr 3fr;
+background-color: #4a3ac2;
+grid-template-rows: 5fr 3fr 3fr ; 
 gap: 25px;
 grid-template-areas:
 'hd hd hd hd'
@@ -14,14 +14,29 @@ min-height:95vh;
 
 #wrapper_index2 {
 display: grid;
-grid-template-rows: 5fr 3fr 3fr;
+grid-template-rows: 2fr 3fr;
 grid-template-areas: 
-''
+'hed hed'
 's s'
 ;
 }
 
-header {
+
+#wrapper_index3 {
+    display: grid;
+    background-color: #4a3a2c;
+    grid-template-rows: 3fr 2fr 4fr 2fr; 
+    gap: 25px;
+    grid-template-areas:
+    'hd hd hd hd'
+    'nv nv nv nv'
+    'sc sc ai ai'
+    'ft ft ft ft';
+    min-height:95vh;
+
+}
+
+#hd1 {
     background-image: url("../img/background_webb.jpg");
     background-size: cover;
    grid-area: hd; 
@@ -38,7 +53,7 @@ header img{
     width: 80px;
 }
 
-nav {
+#nv1 {
     
     grid-area: nv;
     margin-left: 20px;
@@ -55,6 +70,7 @@ nav {
     grid-area: sc;
     background-image: url("../img/bild1_webb.jpg");
     background-size: cover;
+    
     margin-right: 20px;
     display: flex;
     justify-content: space-around;
@@ -62,7 +78,7 @@ nav {
     border-radius: 20px;
 }
 
-aside {
+#ai1 {
     grid-area: ai;
     background-image: url("../img/bild2menu_webb.jpg");
     background-size: cover;
@@ -82,7 +98,7 @@ aside {
 }
 
 
-footer {
+#ft1 {
     grid-area: ft;
     margin-right: 20px;
     margin-bottom: 15px;
@@ -99,8 +115,8 @@ footer {
     grid-area: s;
 }
 
-header2{
-    color: blue;
+#header2{
+    grid-area: hed
 }
 
 #sec21{
@@ -119,3 +135,60 @@ color: blue;
     color: blue;
 }
 
+#hd3{
+    background-image: url("../img/bildsushi_webb.jpg");
+    background-size: cover;
+   grid-area: hd; 
+   font-size: 40px;
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   border: solid black 2px;
+}
+
+#nv3{
+    grid-area: nv;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    display: flex;
+justify-content: center;
+    
+}
+
+#sec31{
+    grid-area: sc;
+    background-size: cover;
+    margin-right: 20px;
+    display: flex;
+    font-size: 15px;
+    font-family: monospace;
+    justify-content: space-around;
+}
+
+#ai3{
+    grid-area: ai;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: monospace;
+   display: flex;
+   justify-content: center;
+    justify-content: space-around;
+
+}
+
+#ft3{
+    grid-area: ft;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    font-size: medium;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 2px;
+    border-radius: 20px;
+}
